@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Atividades - Computação Gráfica</title>
+  <script src="../primitives/square1.js"></script>
+  <script src="../primitives/square2.js"></script>
+  <script src="../primitives/triangle1.js"></script>
+  <script src="../primitives/triangle2.js"></script>
+  <script src="../primitives/triangleFan.js"></script>
+  <script src="../primitives/triangleStrip.js"></script>
+  <script src="../primitives/lines.js"></script>
+  <script src="../primitives/lineStrip.js"></script>
+  <script src="../primitives/lineLoop.js"></script>
+  <script src="../primitives/points.js"></script>
+
+  <script src="robot.js"></script>
+  <script src="flower.js"></script>
+  <script src="car.js"></script>
+  <script src="windmill.js"></script>
+</head>
+<body>
+  <h1>Atividades - Robô, Flor, Carro e Catavento</h1>
+  <canvas id="glcanvas" width="600" height="600"></canvas>
+
+  <script>
+    const canvas = document.getElementById("glcanvas");
+    const gl = canvas.getContext("webgl");
+
+    if (!gl) {
+      alert("WebGL não suportado!");
+    }
+
+    // escolha qual desenho mostrar
+    
+    // drawRobot(gl);
+    // drawFlower(gl);
+    // drawCar(gl);
+    drawWindmill(gl);
+
+    
+  </script>
+</body>
+</html>
